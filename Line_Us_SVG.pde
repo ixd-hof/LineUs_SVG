@@ -161,7 +161,7 @@ void keyPressed()
   } 
   else if (key == 'a')
   {
-      lineus_adress = JOptionPane.showInputDialog("LineUs Address (lineus.local, 192.168.0.4, ...):");
+      lineus_adress = JOptionPane.showInputDialog("LineUs Address (lineus.local, 192.168.4.1, ...):");
   }
   else if (key == 'h')
   {
