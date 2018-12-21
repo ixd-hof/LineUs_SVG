@@ -1,5 +1,9 @@
-// To do:
-// Plotter IP
+// Pre-Release
+// v0.1
+// Creative Commons
+// Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+// https://creativecommons.org/licenses/by-sa/4.0/
+// Michael Zoellner, 2018
 
 
 import geomerative.*;
@@ -14,7 +18,7 @@ boolean connected;
 boolean hide = false;
 float resolution = 5;
 
-String lineus_adress = "192.168.0.4";
+String lineus_adress = "lineus.local"; //"192.168.4.1";
 
 LineUs myLineUs;
 
@@ -90,12 +94,13 @@ void draw() {
     text("move:\tarrow keys <>", 20, 120);
     text("rotate:\tr", 20, 140);
     text("lines:\tl", 20, 160);
+    text("resolution:\tpress mouse / move", 20, 180);
     if (connected == true)
       fill(50, 255, 50);
-    text("connect Line-Us:\tc", 20, 180);
+    text("connect Line-Us:\tc", 20, 200);
     fill(0, 150);
-    text("plot:\tp", 20, 200);
-    text("hide this:\th", 20, 220);
+    text("plot:\tp", 20, 220);
+    text("hide this:\th", 20, 240);
   }
 }
 
@@ -198,11 +203,9 @@ void keyPressed()
   } else if (key == '-')
   {
     grp.scale(0.95);
-    println(grp.getHeight() + " " + grp.getWidth());
   } else if (key == '+')
   {
     grp.scale(1.05);
-    println(grp.getWidth());
   } else if (key == 'l')
   {
     if (lines == true)

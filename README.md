@@ -7,7 +7,7 @@ You can simply open the code in [Processing 2.2.1](https://processing.org/downlo
 Alternatively you can run the applications für Mac OS and Windows.
 
 _Application interface / keys / shortcuts:_
-* drawbot address: a (usually lineus.local in wifi and 192.168.0.4 in setup mode)
+* drawbot address: a (usually lineus.local in wifi and 192.168.4.1 in setup mode)
 * open SVG: o
 * zoom: +/-
 * move: arrow keys <>
