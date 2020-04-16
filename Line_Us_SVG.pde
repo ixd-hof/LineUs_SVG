@@ -18,7 +18,7 @@ boolean connected;
 boolean hide = false;
 float resolution = 5;
 
-String lineus_adress = "lineus.local"; //"192.168.4.1";
+String lineus_adress = "line-us.local"; //"192.168.4.1";
 
 LineUs myLineUs;
 
@@ -161,7 +161,7 @@ void keyPressed()
   } 
   else if (key == 'a')
   {
-      lineus_adress = JOptionPane.showInputDialog("LineUs Address (lineus.local, 192.168.4.1, ...):");
+      lineus_adress = JOptionPane.showInputDialog("LineUs Address (line-us.local, 192.168.4.1, ...):");
   }
   else if (key == 'h')
   {
