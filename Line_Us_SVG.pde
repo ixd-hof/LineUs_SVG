@@ -37,7 +37,7 @@ int lw = 1775 - 650;
 int lh = 2000;
 
 void setup() {
-  size(lw/2, lh/2);
+  surface.setSize(lw/2, lh/2);
   smooth();
 
   RG.init(this);
